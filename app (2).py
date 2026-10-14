@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 st.title("Suicide Risk Text Classification")
-st.write("ระบบจำแนกข้อความด้วย Transformer Embedding และ SVM")
+st.write("ระบบจำแนกข้อความด้วย Multilingual-e5-large-instruct")
 
 # โหลดโมเดล
 @st.cache_resource
