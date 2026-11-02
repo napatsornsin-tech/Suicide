@@ -68,5 +68,3 @@ if st.button("วิเคราะห์ข้อความ"):
             )
         else:
             st.success(str(prediction))
-
-        st.success(str(prediction))
