@@ -61,5 +61,12 @@ if st.button("วิเคราะห์ข้อความ"):
         prediction = svm_model.predict(embedding)[0]
 
         st.subheader("ผลการจำแนก")
+        if str(prediction).strip().lower() == "suicide":
+            st.markdown(
+                f'<p style="color: red; font-size: 20px; font-weight: bold;">{prediction}</p>',
+                unsafe_allow_html=True
+            )
+        else:
+            st.success(str(prediction))
 
         st.success(str(prediction))
