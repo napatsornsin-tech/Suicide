@@ -62,9 +62,7 @@ if st.button("วิเคราะห์ข้อความ"):
 
         st.subheader("ผลการจำแนก")
         if str(prediction).strip().lower() == "suicide":
-            st.markdown(
-                f'<p style="color: red; font-size: 20px; font-weight: bold;">{prediction}</p>',
-                unsafe_allow_html=True
-            )
+            st.error(str(prediction))
+
         else:
             st.success(str(prediction))
